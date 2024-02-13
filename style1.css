@@ -1,0 +1,91 @@
+/* Final CSS with adjustments for the message content */
+body {
+    font-family: 'Garamond', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8edeb;
+    margin: 0;
+}
+/* Additional CSS for the link */
+.go-back-link {
+    text-decoration: none;
+    color: #ff3e6c;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.go-back-link:hover {
+    color: #d50032;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+/* Additional CSS for the message */
+.message {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 20px;
+    font-family: 'Pacifico', cursive; /* Use a romantic font */
+    font-size: 18px; /* Adjust font size as needed */
+    line-height: 1.6; /* Adjust line height as needed */
+}
+
+.romantic-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.flowers {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items vertically */
+    margin-top: 30px;
+}
+
+.flower {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px; /* Adjust the margin if needed */
+    animation: sway 3s ease-in-out infinite alternate;
+}
+
+.message {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 20px;
+}
+
+@keyframes sway {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
